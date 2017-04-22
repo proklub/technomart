@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Главная страница</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -12,29 +12,36 @@
 					<a class="logo" href="#">Техномарт</a>
 					<form>
 						<p>
-							<input type="search" name="search" placeholder="Поиск по сайту">
+							<input type="search" name="search" placeholder="Поиск:">
 							<input type="submit" value="Поиск">
 						</p>
 					</form>
-					<a href="#">Закладки</a>
-					<a href="#">Корзина</a>
-					<a href="#">Оформить заказ</a>
+					<div class="menu-right">
+						<a class="bookmarks" href="#">Закладки:0</a>
+						<a class="basket" href="#">Корзина:10</a>
+						<a class="order" href="#">Оформить заказ</a>
+					</div>
 				</div>
 				<div class="main-info">
 					<div class="description">
 						Интернет-магазин строительных материалов и инструментов для ремонта
 					</div>
-					<div class="phone">
-						+7 (812) 555-05-55
-						<p>
+					<div class="contacts">
+						<div class="phone">
+							+7 (812) 555-05-55
+						</div>
+						<div class="street">
 							г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
-						</p>
+						</div>
 					</div>
 					<div class="personal-area">
+					<div class="user">
 						Равшан Джамшутович
 						<a class="exit"><img src="" width="" height="" alt=""></a>
+					</div>
 						<a href="#">Мои заказы</a>
 						<a href="#">Личный кабинет</a>
+
 					</div>
 				</div>
 				<nav class="main-navigation">
@@ -52,20 +59,22 @@
 		</header>
 		<main class="container">
 		<a class="home-page" href=""><img src="" width="" height="" alt=""></a>
-		<ul class="Breadcrumbs">
+		<ul class="breadcrumbs">
 			<li><a>Каталог</a></li>
-			<li><a href="#">Инструмент</a></li>
-			<li><a href="#">Перфораторы</a></li>
+			<li><a>Инструмент</a></li>
+			<li><a>Перфораторы</a></li>
 		</ul>
 		<h1>Перфораторы</h1>
 		<div class="filter">
 			Фильтр:
 			<form action="" method="">
 				<fieldset>
-					<p>Цена:</p>
+					<legend>Цена:</legend>
 					<input type="range" min="0" max="30000" step="" value="">
 					<input class="min-price" type="text" value="0">
 					<input class="max-price" type="text" value="30000">
+				</fieldset>
+				<fieldset>
 					<legend>Производители:</legend>
 					<div class="input-checkbox">
 						<input type="checkbox" id="check1"><label for="check1">Bosch</label>
@@ -80,7 +89,9 @@
 					<div class="input-radio">
 						<input type="radio" id="check6"><label for="check6">Аккумуляторные</label>
 						<input type="radio" id="check7"><label for="check7">Сетевые</label>
-						<p><input type="submit" value="Показать"></p>
+						<div class="submit">
+							<input type="submit" value="Показать">
+						</div>
 					</div>
 				</fieldset>
 			</form>
@@ -157,7 +168,7 @@
 		</ul>
 		<section class="description">
 			<h2>Пара слов о перфораторах</h2>
-			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</section>
 	</div>
