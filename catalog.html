@@ -10,7 +10,7 @@
 			<div class="container">
 				<div class="user-block">
 					<a class="logo" href="#">Техномарт</a>
-					<form>
+					<form action="" method="">
 						<p>
 							<input type="search" name="search" placeholder="Поиск:">
 							<input type="submit" value="Поиск">
@@ -18,8 +18,8 @@
 					</form>
 					<div class="menu-right">
 						<a class="bookmarks" href="#">Закладки:0</a>
-						<a class="basket" href="#">Корзина:10</a>
-						<a class="order" href="#">Оформить заказ</a>
+						<a class="basket active" href="#">Корзина:10</a>
+						<a class="order active" href="#">Оформить заказ</a>
 					</div>
 				</div>
 				<div class="main-info">
@@ -35,13 +35,12 @@
 						</div>
 					</div>
 					<div class="personal-area">
-					<div class="user">
-						Равшан Джамшутович
-						<a class="exit"><img src="" width="" height="" alt=""></a>
-					</div>
+						<div class="user">
+							Равшан Джамшутович
+							<a class="exit"><img src="" width="" height="" alt=""></a>
+						</div>
 						<a href="#">Мои заказы</a>
 						<a href="#">Личный кабинет</a>
-
 					</div>
 				</div>
 				<nav class="main-navigation">
@@ -58,15 +57,15 @@
 			</div>
 		</header>
 		<main class="container">
-		<a class="home-page" href=""><img src="" width="" height="" alt=""></a>
 		<ul class="breadcrumbs">
-			<li><a>Каталог</a></li>
-			<li><a>Инструмент</a></li>
+			<a class="home-page" href=""></a>
+			<li><a href="">Каталог</a></li>
+			<li><a href="">Инструмент</a></li>
 			<li><a>Перфораторы</a></li>
 		</ul>
 		<h1>Перфораторы</h1>
 		<div class="filter">
-			Фильтр:
+			<div class="filter-main">Фильтр:</div>
 			<form action="" method="">
 				<fieldset>
 					<legend>Цена:</legend>
@@ -77,18 +76,18 @@
 				<fieldset>
 					<legend>Производители:</legend>
 					<div class="input-checkbox">
-						<input type="checkbox" id="check1"><label for="check1">Bosch</label>
-						<input type="checkbox" id="check2"><label for="check2">Интерскол</label>
-						<input type="checkbox" id="check3"><label for="check3">Makita</label>
-						<input type="checkbox" id="check4"><label for="check4">Dewalt</label>
-						<input type="checkbox" id="check5"><label for="check5">Hitachi</label>
+						<input type="checkbox" name="firm" id="check1"><label for="check1">Bosch</label>
+						<input type="checkbox" name="firm" id="check2"><label for="check2">Интерскол</label>
+						<input type="checkbox" name="firm" id="check3"><label for="check3">Makita</label>
+						<input type="checkbox" name="firm" id="check4"><label for="check4">Dewalt</label>
+						<input type="checkbox" name="firm" id="check5"><label for="check5">Hitachi</label>
 					</div>
 				</fieldset>
 				<fieldset>
 					<legend>Питание:</legend>
 					<div class="input-radio">
-						<input type="radio" id="check6"><label for="check6">Аккумуляторные</label>
-						<input type="radio" id="check7"><label for="check7">Сетевые</label>
+						<input type="radio" name="power" id="check6"><label for="check6">Аккумуляторные</label>
+						<input type="radio" name="power" id="check7"><label for="check7">Сетевые</label>
 						<div class="submit">
 							<input type="submit" value="Показать">
 						</div>
@@ -96,8 +95,8 @@
 				</fieldset>
 			</form>
 		</div>
-		<div class="sorting">
-			Сортировка:
+		<div class="sorting">Сортировка:</div>
+		<div class="sort-a">
 			<a class="sort-right-red" href="#">По цене</a>
 			<a class="sort-right" href="#">По типу</a>
 			<a class="sort-right" href="#">По функционалу</a>
@@ -107,55 +106,55 @@
 		<div class="cards">
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 3000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 3000</a>
 				<span class="crossed">22500</span>
 				<span class="price">15500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 6000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 6000</a>
 				<span class="crossed">30500</span>
 				<span class="price">25500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 2000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 2000</a>
 				<span class="crossed">30500</span>
 				<span class="price">12500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 3000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 3000</a>
 				<span class="crossed">22500</span>
 				<span class="price">15500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 6000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 6000</a>
 				<span class="crossed">30500</span>
 				<span class="price">25500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 2000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 2000</a>
 				<span class="crossed">30500</span>
 				<span class="price">12500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 3000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 3000</a>
 				<span class="crossed">22500</span>
 				<span class="price">15500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 6000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 6000</a>
 				<span class="crossed">30500</span>
 				<span class="price">25500</span>
 			</section>
 			<section class="card-product">
 				<img src="#" width="" height="" alt="">
-				<p class="description">Перфоратор BOSCH BFG 2000</p>
+				<a class="description" href="">Перфоратор BOSCH BFG 2000</a>
 				<span class="crossed">30500</span>
 				<span class="price">12500</span>
 			</section>
